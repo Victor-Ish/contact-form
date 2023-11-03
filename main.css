@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.error{
+    background: red;
+    width: fit-content;
+    padding: 1rem 0.5rem;
+}
+#carouselExampleCaptions{
+    height: 100px;
+    width: 100px;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)),url(images/6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
+.content__wrapper{
+margin-top: 4rem;
+}
+.content__brand{
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    color: crimson;
+    text-transform: capitalize;
+}
+.form__content input{
+    display: block;
+    width: 30%;
+    margin: 1rem auto !important;
+    padding: 1rem 0.5rem;
+    outline: none;
+    border-radius: 10px;
+}
+ label{
+    display: none !important;
+}
+textarea{
+    display: block;
+    width: 30%;
+    height: 20vh;
+    margin: 1rem auto;
+    outline: none;
+    padding-left: 0.5rem;
+}
+#send{
+border: none;
+background: crimson;
+color: #fff;
+text-transform: capitalize;
+font-weight: bold;
+}
+textarea::placeholder{
+    padding: 0 0 0 0;
+}
+/*media queries for mobile screen*/
+@media screen and (max-width: 768px){
+    label{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form__content input{
+        width: 50vw;
+        margin: 0px auto;
+    }
+    textarea{
+        width: 50vw;
+    }
+    textarea:focus{
+        outline:  2px thin crimson;
+    }
+    
+}
